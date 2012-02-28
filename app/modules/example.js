@@ -15,7 +15,9 @@ function(namespace, Backbone) {
   var Example = namespace.module();
 
   // Example extendings
-  Example.Model = Backbone.Model.extend({ /* ... */ });
+  Example.Model = Backbone.Model.extend({
+    foo: function() { return 'bar' }
+  });
   Example.Collection = Backbone.Collection.extend({ /* ... */ });
   Example.Router = Backbone.Router.extend({ /* ... */ });
 
